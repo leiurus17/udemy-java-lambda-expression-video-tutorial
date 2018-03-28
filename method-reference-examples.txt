@@ -1,0 +1,9 @@
+1)   str -> str.toLowerCase()   ---     String::toLowerCase
+
+2)   (str, i) -> str.substring(i)   ---   String::substring
+
+3)   number -> String.valueOf(number)   ---   String::valueOf
+
+4)   (originalString) -> new String(originalString)   ---   String::new
+
+5)   (someOtherString) -> someString.concat(someOtherString)   ---   someString::concat
