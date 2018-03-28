@@ -1,5 +1,7 @@
 package com.naturalprogrammer.java8tutorial;
 
+import java.util.Arrays;
+import java.util.Comparator;
 import java.util.function.BiFunction;
 
 public class App2 {
@@ -15,6 +17,19 @@ public class App2 {
 		
 		System.out.println(process("Hello World!", str -> prefix.concat(str)));
 		System.out.println(process("Hello World!", prefix::concat));
+		
+		String[] names = {"Mr Sanjay", "Ms Trupti", "Dr John"};
+		
+		Arrays.sort(names, new Comparator<String>() {
+			
+			//@Override
+			public int compare(String name1, String name2) {
+				
+				return name1.split(" ")[1].compareTo(name2.split(" ")[1]);
+			}
+		});
+		
+		System.out.println(Arrays.toString(names));
 
 	}
 
