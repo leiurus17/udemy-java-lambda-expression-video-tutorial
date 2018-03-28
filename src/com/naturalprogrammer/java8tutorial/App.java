@@ -9,9 +9,7 @@ public class App {
 	
 	public static void main(String[] args) {
 		
-		System.out.println(process("Hello World!", (str) -> {
-				return str.toLowerCase();
-			}));
+		System.out.println(process("Hello World!", str -> str.toLowerCase()));
 	}
 
 	private static String process(String string, Processor processor) {
