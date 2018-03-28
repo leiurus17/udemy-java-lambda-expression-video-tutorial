@@ -18,6 +18,7 @@ public class App {
 
 }
 
+@FunctionalInterface
 interface Processor {
 	String process(String str);
 }
